@@ -18,7 +18,7 @@ public class LoadingProgress : MonoBehaviour
         image.fillAmount = 0;
         yield return new WaitForSeconds(1);
 
-        var asyncOp = SceneManager.LoadSceneAsync(SceneLoader.SceneToLoad);
+        var asyncOp = SceneManager.LoadSceneAsync(/*SceneLoader.SceneToLoad*/"3DMaze");
 
         while (asyncOp.isDone == false)
         {
